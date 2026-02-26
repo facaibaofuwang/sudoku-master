@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <!-- 渐变背景 -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563eb;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 内发光效果 -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    
+    <!-- 阴影 -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- 背景圆形 -->
+  <circle cx="512" cy="512" r="480" fill="url(#bgGradient)" filter="url(#shadow)"/>
+  
+  <!-- 外边框装饰 -->
+  <circle cx="512" cy="512" r="440" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="4"/>
+  
+  <!-- 3x3 网格背景 -->
+  <g transform="translate(512, 512) translate(-300, -300)">
+    <!-- 网格背景 -->
+    <rect x="0" y="0" width="600" height="600" rx="24" fill="rgba(255,255,255,0.95)" filter="url(#shadow)"/>
+    
+    <!-- 九宫格线条 -->
+    <g stroke="#4f46e5" stroke-width="6" stroke-linecap="round">
+      <!-- 横线 -->
+      <line x1="40" y1="200" x2="560" y2="200"/>
+      <line x1="40" y1="400" x2="560" y2="400"/>
+      <!-- 竖线 -->
+      <line x1="200" y1="40" x2="200" y2="560"/>
+      <line x1="400" y1="40" x2="400" y2="560"/>
+    </g>
+    
+    <!-- 细线 -->
+    <g stroke="#c7d2fe" stroke-width="3" stroke-linecap="round">
+      <!-- 横细线 -->
+      <line x1="40" y1="106" x2="560" y2="106"/>
+      <line x1="40" y1="306" x2="560" y2="306"/>
+      <line x1="40" y1="506" x2="560" y2="506"/>
+      <!-- 竖细线 -->
+      <line x1="106" y1="40" x2="106" y2="560"/>
+      <line x1="306" y1="40" x2="306" y2="560"/>
+      <line x1="506" y1="40" x2="506" y2="560"/>
+    </g>
+    
+    <!-- 数字 (部分填充) -->
+    <g font-family="Arial, sans-serif" font-weight="bold" text-anchor="middle">
+      <!-- 第一行 -->
+      <text x="73" y="90" font-size="56" fill="#4f46e5">5</text>
+      <text x="253" y="90" font-size="56" fill="#7c3aed">3</text>
+      <text x="453" y="166" font-size="56" fill="#2563eb">7</text>
+      
+      <!-- 第二行 -->
+      <text x="73" y="276" font-size="56" fill="#dc2626">6</text>
+      <text x="253" y="276" font-size="56" fill="#4f46e5">1</text>
+      <text x="346" y="276" font-size="56" fill="#7c3aed">9</text>
+      <text x="533" y="276" font-size="56" fill="#2563eb">5</text>
+      
+      <!-- 第三行 -->
+      <text x="173" y="376" font-size="56" fill="#9ca3af">8</text>
+      <text x="453" y="376" font-size="56" fill="#4f46e5">6</text>
+      <text x="546" y="376" font-size="56" fill="#dc2626">3</text>
+      
+      <!-- 第四行 -->
+      <text x="73" y="476" font-size="56" fill="#2563eb">4</text>
+      <text x="453" y="476" font-size="56" fill="#7c3aed">8</text>
+      <text x="546" y="476" font-size="56" fill="#9ca3af">5</text>
+      
+      <!-- 第五行 -->
+      <text x="173" y="543" font-size="56" fill="#7c3aed">7</text>
+      <text x="346" y="543" font-size="56" fill="#dc2626">9</text>
+    </g>
+    
+    <!-- 角落装饰 -->
+    <circle cx="40" cy="40" r="12" fill="#4f46e5" opacity="0.3"/>
+    <circle cx="560" cy="40" r="12" fill="#7c3aed" opacity="0.3"/>
+    <circle cx="40" cy="560" r="12" fill="#2563eb" opacity="0.3"/>
+    <circle cx="560" cy="560" r="12" fill="#4f46e5" opacity="0.3"/>
+  </g>
+  
+  <!-- 顶部高光 -->
+  <ellipse cx="512" cy="180" rx="300" ry="100" fill="rgba(255,255,255,0.1)"/>
+</svg>

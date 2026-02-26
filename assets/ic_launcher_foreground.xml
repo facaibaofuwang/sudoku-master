@@ -1,0 +1,26 @@
+<!-- 自适应图标前景层 (Android 8.0+) -->
+<!-- 放置于 mipmap-anydpi-v26/ic_launcher_foreground.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:translateX="10.8"
+        android:translateY="10.8">
+        <!-- 3x3 网格 -->
+        <path
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="2"
+            android:pathData="M20,20 L20,88 M20,43 L88,43 M20,66 L88,66 M20,88 L88,88 M43,20 L43,88 M66,20 L66,88 M88,20 L88,88"/>
+        <!-- 数字 -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M28,35 L28,30 L35,30 L35,32 L30,32 L30,35 L34,35 L34,37 L30,37 L30,42 L28,42 Z"/>
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M50,35 Q48,35 47,34 Q46,33 46,31 Q46,29 48,28 Q49,27 52,27 Q55,27 56,28 Q58,29 58,31 Q58,33 57,34 Q56,35 54,35 L54,35 Q56,36 57,37 Q58,38 58,40 Q58,42 56,43 Q55,45 52,45 Q49,45 47,43 Q46,42 46,40 Q46,38 47,37 Q48,36 50,35 Z M52,33 Q53,33 54,33 Q55,32 55,31 Q55,30 54,29 Q53,29 52,29 Q50,29 50,29 Q49,30 49,31 Q49,32 50,33 Q50,33 52,33 Z M52,37 Q50,37 49,38 Q49,39 49,40 Q49,41 49,42 Q50,42 52,42 Q53,42 54,42 Q55,41 55,40 Q55,39 54,38 Q53,37 52,37 Z"/>
+    </group>
+</vector>
